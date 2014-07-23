@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "postinstall": "grunt bower"
+    "postinstall": "grunt bower-requirejs"
   }
 }
