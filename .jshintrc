@@ -1,0 +1,26 @@
+{
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "forin": true,
+  "freeze": true,
+  "immed": true,
+  "indent": 2,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+  "nonbsp": true,
+  "nonew": true,
+  "quotmark": "single",
+  "undef": true,
+  "unused": true,
+  "strict": true,
+  "laxcomma": true,
+  "browser": true,
+  "devel": true,
+  "globals": {
+    "define": false,
+    "require": false
+  }
+}
