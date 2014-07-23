@@ -1,5 +1,5 @@
-/* jshint quotmark: double */
-require.config({
+//noinspection JSHint
+var require ={
   shim: {
     peerjs: {
       exports: "Peer"
@@ -14,4 +14,4 @@ require.config({
   packages: [
 
   ]
-});
+};
