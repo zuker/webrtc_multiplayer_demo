@@ -3,7 +3,7 @@ define(['peerjs', './config'], function (Peer, config) {
   var key = config.peerjs.key;
 
   function open(callback) {
-    var peer = (new Peer({key: key}));
+    var peer = new Peer({key: key});
     peer
       .once('error', callback)
       .once('open', function() {
