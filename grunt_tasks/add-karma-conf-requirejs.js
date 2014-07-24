@@ -7,6 +7,7 @@ module.exports = function (grunt) {
       grunt.file.read('test/requirejs.config.js')
         .replace(/deps: null/, 'deps: typeof allTestFiles === \'undefined\' ? null : allTestFiles')
         .replace(/callback: null/, 'callback: typeof window === \'undefined\' ? null : window.__karma__.start')
+        .replace(/peerjs: 'bower_components\/peerjs\/peer\.min'/, 'peerjs: \'test/mock/peer\'')
     );
   });
 };
