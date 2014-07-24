@@ -4,7 +4,7 @@
   "description": "WebRTC Multiplayer demo",
   "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt karma:ci"
   },
   "author": "Leonid Kuzmin",
   "license": "MIT",

@@ -23,7 +23,7 @@ define(
         stubPeer.reset();
       });
       describe('#create()', function () {
-        it.skip('should connect to peerjs', function () {
+        it('should connect to peerjs', function () {
           stubPeer.returns(peerjs);
           peer.create();
           stubPeer.should.have.been.calledOnce;

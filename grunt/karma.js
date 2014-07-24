@@ -6,7 +6,8 @@ module.exports = {
   ci: {
     singleRun: true,
     browsers: ['PhantomJS'],
-    reporters: ['progress']
+    reporters: ['progress'],
+    logLevel: 'ERROR'
   },
   dev: {}
 };
