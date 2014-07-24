@@ -1,0 +1,5 @@
+default:
+  - bower-requirejs
+bower-requirejs:
+  - concurrent:bower
+  - add-karma-conf-requirejs

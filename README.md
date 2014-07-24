@@ -1,2 +1,4 @@
--webrtc_multiplayer_demo
-========================
+WebRTC Multiplayer Demo
+======
+
+Browser real-time multiplayer demo using Peerjs.

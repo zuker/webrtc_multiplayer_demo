@@ -65,5 +65,3 @@ node_modules
 
 ### Bower ###
 bower_components
-
-/test/requirejs.config.js
