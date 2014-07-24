@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/zuker/webrtc_multiplayer_demo.svg?branch=master)](https://travis-ci.org/zuker/webrtc_multiplayer_demo)
+[![Build Status](https://travis-ci.org/zuker/webrtc_multiplayer_demo.svg?branch=dev)](https://travis-ci.org/zuker/webrtc_multiplayer_demo)
 
 WebRTC Multiplayer Demo
 ======
