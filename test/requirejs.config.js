@@ -13,6 +13,9 @@ require.config({
     },
     'bower_components/peerjs/peer': {
       exports: 'Peer'
+    },
+    phaser: {
+      exports: "Phaser"
     }
   },
   packages: [
@@ -24,7 +27,9 @@ require.config({
     jquery: 'bower_components/jquery/dist/jquery',
     mocha: 'bower_components/mocha/mocha',
     peerjs: 'test/mock/peer',
-    'sinon-chai': 'bower_components/sinon-chai/lib/sinon-chai'
+    'sinon-chai': 'bower_components/sinon-chai/lib/sinon-chai',
+    phaser: 'bower_components/phaser/phaser',
+    lodash: 'bower_components/lodash/dist/lodash.compat'
   },
   deps: typeof allTestFiles === 'undefined' ? null : allTestFiles,
   callback: typeof window === 'undefined' ? null : window.__karma__.start

@@ -1,4 +1,4 @@
-require(['peer', 'jquery'], function (peer, $) {
+require(['peer', 'jquery', 'game'], function (peer, $, game) {
   'use strict';
   function bindLog(dataConnection) {
     function log(me, data) {
@@ -25,7 +25,7 @@ require(['peer', 'jquery'], function (peer, $) {
         peer.on('connection', function (dataConnection) {
           console.log('Remote peer connected: ' + dataConnection.peer);
           dataConnection.once('open', function () {
-            bindLog(dataConnection);
+            game.create(true, dataConnection);
           });
         });
       }
@@ -39,7 +39,7 @@ require(['peer', 'jquery'], function (peer, $) {
           console.error(err);
         } else {
           console.log('Connected to ID: ' + id);
-          bindLog(dataConnection);
+          game.create(false, dataConnection);
         }
       });
     } else {
