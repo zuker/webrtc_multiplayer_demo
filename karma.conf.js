@@ -2,7 +2,7 @@
 // Karma configuration
 // Generated on Wed Jul 23 2014 16:34:59 GMT+0300 (EEST)
 
-module.exports = function(config) {
+module.exports = function (config) {
   'use strict';
   config.set({
 
@@ -21,6 +21,7 @@ module.exports = function(config) {
       'test/requirejs.test.js',
       'test/requirejs.config.js',
       {pattern: 'bower_components/**/*.js', included: false},
+      {pattern: 'test/mock/**/*.js', included: false},
       {pattern: 'app/**/*.js', included: false},
       {pattern: 'test/**/*.spec.js', included: false}
     ],
@@ -36,13 +37,14 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'app/**/*.js': ['coverage']
     },
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['mocha'],
 
 
     // web server port
@@ -64,12 +66,11 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-//    browsers: ['PhantomJS', 'Chrome', 'Firefox'],
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: true
+    singleRun: false
   });
 };

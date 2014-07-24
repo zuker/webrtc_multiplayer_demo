@@ -7,6 +7,12 @@ require.config({
     },
     sinon: {
       exports: 'sinon'
+    },
+    'bower_components/peerjs/peer.min': {
+      exports: 'Peer'
+    },
+    'bower_components/peerjs/peer': {
+      exports: 'Peer'
     }
   },
   packages: [
@@ -17,9 +23,8 @@ require.config({
     chai: 'bower_components/chai/chai',
     jquery: 'bower_components/jquery/dist/jquery',
     mocha: 'bower_components/mocha/mocha',
-    peerjs: 'bower_components/peerjs/peer.min',
-    'sinon-chai': 'bower_components/sinon-chai/lib/sinon-chai',
-    squire: 'bower_components/squire/src/Squire'
+    peerjs: 'test/mock/peer',
+    'sinon-chai': 'bower_components/sinon-chai/lib/sinon-chai'
   },
   deps: typeof allTestFiles === 'undefined' ? null : allTestFiles,
   callback: typeof window === 'undefined' ? null : window.__karma__.start

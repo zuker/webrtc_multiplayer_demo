@@ -1,4 +1,4 @@
-define(['peer', 'jquery'], function (peer, $) {
+require(['peer', 'jquery'], function (peer, $) {
   'use strict';
   function bindLog(dataConnection) {
     function log(me, data) {
