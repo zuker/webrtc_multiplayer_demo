@@ -8,22 +8,24 @@
 </head>
 <body>
     <h1>WebRTC Multiplayer Demo</h1>
-    <form>
-        <input type="button" value="create" id="create"/><br/>
+
+    <p>
+        Create Server or connect to existing. Game will start immediately upon other peer connection to the Server.<br/>
+        Use arrow keys to control characters. Death Star for Server and for client Yoda is.
+        Reload the page to reset.
+    </p>
+
+    <form id="createForm">
+        <input type="button" value="Create Server" id="create"/><br/>
+    </form>
+    <div id="yourPeerId" style="display: none"><span>Your PeerId: </span><span></span></div>
+    <form id="connectForm">
         <label>
+            PeerId:
             <input type="text" id="peerId"/>
         </label>
         <input type="button" value="connect" id="connect"/>
     </form>
-    <form style="display:none" id="communication">
-        <label>
-            <input type="text" id="data">
-        </label>
-        <input type="button" value="send" id="send"><br/>
-        <label for="log"></label><textarea id="log"></textarea>
-    </form>
-    <div id="container">
-
-    </div>
+    <br/><iframe src="http://ghbtns.com/github-btn.html?user=zuker&repo=webrtc_multiplayer_demo&type=fork&size=large" height="30" width="100" frameborder="0" scrolling="0" style="width:100px; height: 30px;" allowTransparency="true"></iframe>
 </body>
 </html>
