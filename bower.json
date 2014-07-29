@@ -17,11 +17,14 @@
   ],
   "dependencies": {
     "peerjs": "~0.3.9",
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "phaser": "~2.0.4",
+    "lodash": "~2.4.1"
   },
   "devDependencies": {
     "chai": "~1.9.1",
     "sinon-chai": "~2.5.0",
-    "mocha": "~1.20.1"
+    "mocha": "~1.20.1",
+    "almond": "~0.2.9"
   }
 }

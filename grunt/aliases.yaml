@@ -1,5 +1,10 @@
 default:
-  - bower-requirejs
+  - build
 bower-requirejs:
   - concurrent:bower
   - add-karma-conf-requirejs
+build:
+  - clean:build
+  - requirejs:compile
+  - generate-build-index
+  - copy:assets

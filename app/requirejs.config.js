@@ -1,5 +1,5 @@
 //noinspection JSHint
-var require = {
+require.config({
   shim: {
     peerjs: {
       exports: "Peer"
@@ -17,4 +17,4 @@ var require = {
   packages: [
 
   ]
-};
+});

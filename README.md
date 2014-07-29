@@ -3,5 +3,6 @@
 WebRTC Multiplayer Demo
 ======
 
-In progress.
 Browser real-time multiplayer demo using Peerjs.
+
+[http://zuker.github.io](http://zuker.github.io)

@@ -15,7 +15,7 @@ require.config({
       exports: 'Peer'
     },
     phaser: {
-      exports: "Phaser"
+      exports: 'Phaser'
     }
   },
   packages: [

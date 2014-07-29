@@ -105,7 +105,6 @@ define(['phaser', 'lodash'], function (Phaser, _) {
             yoda.y = firstStep.yoda.y + (lastStep.yoda.y - firstStep.yoda.y) * t;
           }
         }
-
       }
     };
   };

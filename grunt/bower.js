@@ -13,7 +13,8 @@ module.exports = function (grunt) {
     test: {
       rjsConfig: 'test/requirejs.config.js',
       options: {
-        baseUrl: './'
+        baseUrl: './',
+        exclude: ['almond']
       }
     }
   };

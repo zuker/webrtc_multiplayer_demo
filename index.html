@@ -3,29 +3,33 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>WebRTC Multiplayer Demo</title>
+    <!--start-scripts-->
     <script src="app/requirejs.config.js" type="text/javascript"></script>
     <script data-main="app/index.js" src="lib/require.js" type="text/javascript"></script>
+    <!--end-scripts-->
 </head>
 <body>
-    <h1>WebRTC Multiplayer Demo</h1>
+<h1>WebRTC Multiplayer Demo</h1>
 
-    <p>
-        Create Server or connect to existing. Game will start immediately upon other peer connection to the Server.<br/>
-        Use arrow keys to control characters. Death Star for Server and for client Yoda is.
-        Reload the page to reset.
-    </p>
+<p>
+    Create Server or connect to existing. Game will start immediately upon other peer connection to the Server.<br/>
+    Use arrow keys to control characters. Death Star for Server and for client Yoda is.
+    Reload the page to reset.
+</p>
 
-    <form id="createForm">
-        <input type="button" value="Create Server" id="create"/><br/>
-    </form>
-    <div id="yourPeerId" style="display: none"><span>Your PeerId: </span><span></span></div>
-    <form id="connectForm">
-        <label>
-            PeerId:
-            <input type="text" id="peerId"/>
-        </label>
-        <input type="button" value="connect" id="connect"/>
-    </form>
-    <br/><iframe src="http://ghbtns.com/github-btn.html?user=zuker&repo=webrtc_multiplayer_demo&type=fork&size=large" height="30" width="100" frameborder="0" scrolling="0" style="width:100px; height: 30px;" allowTransparency="true"></iframe>
+<form id="createForm">
+    <input type="button" value="Create Server" id="create"/><br/>
+</form>
+<div id="yourPeerId" style="display: none"><span>Your PeerId: </span><span></span></div>
+<form id="connectForm">
+    <label>
+        PeerId:
+        <input type="text" id="peerId"/>
+    </label>
+    <input type="button" value="connect" id="connect"/>
+</form>
+<br/>
+<iframe src="http://ghbtns.com/github-btn.html?user=zuker&repo=webrtc_multiplayer_demo&type=fork&size=large" height="30"
+        width="100" frameborder="0" scrolling="0" style="width:100px; height: 30px;" allowTransparency="true"></iframe>
 </body>
 </html>
